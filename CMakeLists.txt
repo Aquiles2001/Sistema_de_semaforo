@@ -15,7 +15,7 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -pedantic -Werror -Wextra -Wconversion -std=gnu11 -g")
 
 # Compilar los programas
-add_executable(sistema_de_semaforo ${CMAKE_CURRENT_SOURCE_DIR}/src/main.c)
+add_executable(sistema_de_semaforo ${CMAKE_CURRENT_SOURCE_DIR}/src/main.c ${CMAKE_CURRENT_SOURCE_DIR}/src/semaforo.c)
 
 # Agregar los encabezados a los programas
 target_include_directories(sistema_de_semaforo PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/inc)
